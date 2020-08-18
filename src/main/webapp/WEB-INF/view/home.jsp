@@ -22,6 +22,14 @@
 	Hello World !!!!!!!!!!
 	</p>
 	
+	<hr>
+	<!--  Add a link to point to /leaders ... this is for the managers -->
+	
+	<p>
+		<a href="${pageContext.request.contextPath}/leaders">LeaderShip Meeting</a>
+		(Only for Manager peeps)
+	</p>
+	
 	<!-- Add button logout -->
 	<form:form action="${pageContext.request.contextPath}/logout" method="POST">
 		<input type="submit" value="Logout" />
