@@ -30,6 +30,11 @@
 		(Only for Manager peeps)
 	</p>
 	
+	<p>
+		<a href="${pageContext.request.contextPath}/systems">IT Systems Meeting</a>
+		(Only for Admin)
+	</p>
+	
 	<!-- Add button logout -->
 	<form:form action="${pageContext.request.contextPath}/logout" method="POST">
 		<input type="submit" value="Logout" />
