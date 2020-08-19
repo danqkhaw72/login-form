@@ -76,12 +76,12 @@ public class DemoAppConfig {
 		// set connection pool props
 		
 		securityDataSource.setInitialPoolSize(
-				getIntProperty("connection.pool.inittalPoolSize"));
-		securityDataSource.setInitialPoolSize(
+				getIntProperty("connection.pool.initialPoolSize"));
+		securityDataSource.setMinPoolSize(
 				getIntProperty("connection.pool.minPoolSize"));
-		securityDataSource.setInitialPoolSize(
+		securityDataSource.setMaxPoolSize(
 				getIntProperty("connection.pool.maxPoolSize"));
-		securityDataSource.setInitialPoolSize(
+		securityDataSource.setMaxIdleTime(
 				getIntProperty("connection.pool.maxIdleTime"));
 		
 		return securityDataSource;
